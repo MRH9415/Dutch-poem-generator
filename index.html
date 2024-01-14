@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.I. Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-  <title>A.I. Poem Generator</title>
-</head>
+  </head>
   <body>
     <div class="container">
       <header>
@@ -17,26 +17,34 @@
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter the topic for your poem.."
+            id="user-instructions"
+            class="instructions"
+            placeholder="Enter the topic for your poem..."
             autofocus
             required
             autocomplete="off"
-            class="instructions"
           />
-          <input type="submit" class="submit-button" id="submit-button" name="submit-button" />
+          <input
+            type="submit"
+            class="submit-button"
+            id="submit-button"
+            name="submit-button"
+          />
         </form>
         <div class="poem" id="poem"></div>
       </main>
     </div>
+
     <footer>
       This project was coded by
       <a href="https://github.com/MRH9415" target="_blank">M.R.Hogenboom</a>
       and is open-sourced on
       <a href="https://github.com/MRH9415/Dutch-poem-generator" target="_blank"
-        >Github</a
+        >GitHub</a
       >
-      and is hosted on Netlify </a>. 
-    </div>
+      and is hosted on Netlify.
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>

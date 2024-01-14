@@ -35,5 +35,7 @@ function generatePoem(event) {
     }); // Ends Axios request
 } // Ends generatePoem function
 
-let poemFormElement = document.querySelector("#poem-generator-form");
-poemFormElement.addEventListener("submit", generatePoem);
+document.addEventListener("DOMContentLoaded", function () {
+  let poemFormElement = document.querySelector("#poem-generator-form");
+  poemFormElement.addEventListener("submit", generatePoem);
+});
