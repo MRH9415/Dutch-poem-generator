@@ -11,6 +11,11 @@ function generatePoem(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
+  if (!instructionsInput) {
+    console.error("Element with ID 'user-instructions' not found.");
+    return;
+  }
+
   let apiKey = "c9b0ec623aacc60coeb8df5a545t1489";
   let prompt = `Generate a Dutch Poem about ${instructionsInput.value}`;
   let context =
@@ -21,8 +26,14 @@ function generatePoem(event) {
   console.log(`prompt: ${prompt}`);
   console.log(`context: ${context}`);
 
-  axios.get(apiURL).then(displayPoem);
-}
+  axios
+    .get(apiURL)
+    .then(displayPoem)
+    .catch((error) => {
+      console.error("Error fetching poem:", error);
+      // Handle the error appropriately
+    }); // Ends Axios request
+} // Ends generatePoem function
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
