@@ -1,4 +1,5 @@
 function displayPoem(response) {
+  console.log("poem generated");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -16,6 +17,7 @@ function generatePoem(event) {
     return;
   }
 
+  let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "c9b0ec623aacc60coeb8df5a545t1489";
   let prompt = `Generate a Dutch Poem about ${instructionsInput.value}`;
   let context =
