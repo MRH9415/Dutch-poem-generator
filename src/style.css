@@ -1,6 +1,6 @@
 body {
   background-color: antiquewhite;
-  font-family: "Times New Roman", Times, serif; /* A more classic, serif font */
+  font-family: "Garamond", serif; /* Classic, elegant serif font */
 }
 
 a {
@@ -22,6 +22,7 @@ h1 {
   font-size: 36px;
   line-height: 1.5;
   color: #272044;
+  font-family: "Playfair Display", serif; /* A decorative serif font that looks grand and old-fashioned */
 }
 
 form {
@@ -40,7 +41,7 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
-  font-family: "Georgia", serif; /* Applying a serif font for input text */
+  font-family: "Merriweather", serif; /* Soft, classic-looking serif for input text */
 }
 
 .submit-button {
@@ -60,7 +61,7 @@ form {
   line-height: 2;
   border-left: 3px solid burlywood;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  font-family: "Courier New", Courier, monospace; /* A monospaced font for a typewriter-like appearance */
+  font-family: "Courier New", Courier, monospace; /* Keeping the typewriter-like appearance for poems */
 }
 
 footer {
