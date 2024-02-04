@@ -1,12 +1,7 @@
-function displayPoem(poem) {
-  console.log("poem generated");
-  poemDisplay.innerHTML = "";
-
-  new Typewriter(poemDisplay, {
-    strings: poem, // Use the poem directly as the string
+function displayQuote(response) {
+  new Typewriter("#quote", {
+    strings: response.data.answer.toUpperCase(),
     autoStart: true,
-    delay: 100,
-    cursor: "",
   });
 }
 
