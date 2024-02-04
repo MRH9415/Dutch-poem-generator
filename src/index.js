@@ -1,7 +1,11 @@
-function displayPoem(response) {
+function displayPoem(poem) {
   console.log("poem generated");
-  new Typewriter("#poem", {
-    strings: response.data.answer,
+  // Ensure the poemDisplay is empty before initializing a new Typewriter effect
+  poemDisplay.innerHTML = "";
+
+  // Initialize the Typewriter effect correctly
+  new Typewriter(poemDisplay, {
+    strings: poem, // Use the poem directly as the string
     autoStart: true,
     delay: 50,
     cursor: "",
