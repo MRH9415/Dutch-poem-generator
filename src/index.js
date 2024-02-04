@@ -1,3 +1,13 @@
+function displayPoem(response) {
+  console.log("poem generated");
+  new Typewriter("#poem", {
+    strings: response.data.answer,
+    autoStart: true,
+    delay: 50,
+    cursor: "",
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("#poem-generator-form");
   const poemDisplay = document.querySelector("#poem");
