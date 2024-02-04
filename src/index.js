@@ -1,8 +1,11 @@
-function displayTravel(response) {
-  new Typewriter("#travel", {
-    strings: response.data.answer,
+function displayPoem(poem) {
+  console.log("poem generated");
+  poemDisplay.innerHTML = "";
+
+  new Typewriter(poemDisplay, {
+    strings: poem, // Use the poem directly as the string
     autoStart: true,
-    delay: 1,
+    delay: 100,
     cursor: "",
   });
 }
