@@ -1,7 +1,9 @@
-function displayQuote(response) {
-  new Typewriter("#quote", {
-    strings: response.data.answer.toUpperCase(),
+function displayTravel(response) {
+  new Typewriter("#travel", {
+    strings: response.data.answer,
     autoStart: true,
+    delay: 1,
+    cursor: "",
   });
 }
 
