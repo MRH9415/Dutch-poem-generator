@@ -1,6 +1,6 @@
 body {
   background-color: antiquewhite;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif; /* A more classic, serif font */
 }
 
 a {
@@ -40,6 +40,7 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
+  font-family: "Georgia", serif; /* Applying a serif font for input text */
 }
 
 .submit-button {
@@ -59,6 +60,7 @@ form {
   line-height: 2;
   border-left: 3px solid burlywood;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  font-family: "Courier New", Courier, monospace; /* A monospaced font for a typewriter-like appearance */
 }
 
 footer {
